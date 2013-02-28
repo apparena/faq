@@ -133,7 +133,7 @@ include_once("init.php");
                     </div>
                     <div id="collapse<?=$i;?>" class="accordion-body collapse in">
                         <div class="accordion-inner">
-                            <?=$aa['config']['q' . $i . '_desc']['value'];?>
+                            <?=$aa['config']['q' . $i . '_answer']['value'];?>
                         </div>
                     </div>
                 </div>
