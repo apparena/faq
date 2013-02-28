@@ -131,7 +131,7 @@ include_once("init.php");
                             <?=$aa['config']['q' . $i . '_title']['value'];?>
                         </a>
                     </div>
-                    <div id="collapse<?=$i;?>" class="accordion-body collapse in">
+                    <div id="collapse<?=$i;?>" class="accordion-body collapse <?php if ($i == 1) echo "in"; ?>">
                         <div class="accordion-inner">
                             <?=$aa['config']['q' . $i . '_answer']['value'];?>
                         </div>
