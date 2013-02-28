@@ -114,24 +114,6 @@ include_once("init.php");
     </div>
 <?php }?>
 
-
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <nav>
-                <ul class="nav">
-                    <li><a onclick="aa_tmpl_load('index.phtml');"><?php __p("Home");?></a></li>
-                    <li><a onclick="aa_tmpl_load('localization.phtml');"><?php __p("localization");?></a></li>
-                    <li><a onclick="aa_tmpl_load('fb-demo.phtml');"><?php __p("FB");?></a></li>
-                    <li><a onclick="aa_tmpl_load('module_registration.phtml');"><?php __p("Register");?></a></li>
-                    <li><a onclick="aa_tmpl_load('form_validation.phtml');"><?php __p("Validation");?></a></li>
-                    <li><a onclick="aa_tmpl_load('db-demo.phtml');"><?php __p("DB");?></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
-
 <!-- this is the div you can append info/alert/error messages to (will be showing between the menu and the content by default) -->
 <div id="msg-container"></div>
 
@@ -139,7 +121,7 @@ include_once("init.php");
     <?php  echo $aa['config']['header_custom']['value'];  ?>
 </div>
 
-<div id="main" class="container">
+<div id="main">
     <!-- the main content is managed by initApp() -->
 </div>
 <!-- #main -->
@@ -252,21 +234,5 @@ if (isset($aaForJs['inst']['aa_app_secret'])) {
 <!-- data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
 <script data-main="js/main" src="js/require.js"></script>
 
-<script>
-    require(
-            [
-                'components/admin_panel/ui',
-                'components/flight/tools/debug/debug'
-            ],
-
-            function(apanel, debug) {
-                debug.enable(true);
-                //compose.mixin(registry, [advice.withAdvice, withLogging]);
-                /*require(['app/boot/page'], function(initialize) {
-                    initialize();
-                });*/
-            }
-    );
-</script>
 </body>
 </html>
