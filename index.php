@@ -242,8 +242,6 @@ if (isset($aaForJs['inst']['aa_app_secret'])) {
 <?php } ?>
 
 
-<button id="admin_panel_new">New Admin Panel Button</button>
-
 <script src="js/components/jquery/jquery-1.7.1.min.js"></script>
 <!-- data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
 <script data-main="js/main" src="js/require.js"></script>
